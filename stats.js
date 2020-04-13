@@ -1,4 +1,5 @@
 const os = require('os')
+const log = require('./logger')
 
 setInterval(() => {
     const { freemem, totalmem } = os
@@ -18,5 +19,10 @@ setInterval(() => {
     console.log('========PC STATS========');
     console.log('========================');
     console.table(stats);
+    if (parseInt(stats.usage) < 40) {
+        console.log('Melhor comprar mais memória');
+    }
+
+    log(`${JSON.stringify(stats)}\n`)
 
 }, 1000)
