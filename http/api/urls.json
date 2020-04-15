@@ -1,0 +1,16 @@
+{
+    "urls": [
+        {
+            "name": "Google",
+            "url": "http://google.com"
+        },
+        {
+            "name": "Gloogle",
+            "url": "http://gloogle.com"
+        },
+        {
+            "name": "Gloogle",
+            "url": "http://asd.com"
+        }
+    ]
+}
